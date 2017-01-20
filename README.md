@@ -3,6 +3,9 @@
 
 # 使用方法
 git clone https://github.com/crossa/raspberry-pi-px4firmware
+
 git clone https://github.com/PX4/Firmware.git
+
 cp -rf raspberry-pi-px4firmware/* Firmware/
+
 make posix_rpi_native_single
