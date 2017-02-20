@@ -1,6 +1,7 @@
 /****************************************************************************
  *
- *   Copyright (C) 2015 Mark Charlebois. All rights reserved.
+ *   Copyright (C) 2015 Mark Charl. All rights reserved.
+ *   Copyright (C) 2017 Fan.zhang. All rights reserved. 421395590@qq.com
  *   Copyright (C) 2016 PX4 Development Team. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
