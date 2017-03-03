@@ -82,7 +82,7 @@ int rpi_pca9685_pwm_out::pwm_initialize()
 	/**************初始化PCA9685开始*************/
 	pwm.init(1,0x40);
 	usleep(1000 * 100);
-	pwm.setPWMFreq (61);
+	pwm.setPWMFreq (50);
 	usleep(1000 * 1000);
 	/**************初始化PCA9685结束************/
 	return 0;
