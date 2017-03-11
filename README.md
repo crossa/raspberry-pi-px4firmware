@@ -15,20 +15,26 @@ cp -rf raspberry-pi-px4firmware/* Firmware/
 
 # 追加环境变量
 export AUTOPILOT_HOST=XXX.XXX.XXX  #此处填写ip地址
+
 export RPI_TOOLCHAIN_DIR=<your dir> #工具链目录，bin目录上一层
+
 export CROSS_COMPILE_PREFIX=<your prefix> # 工具链前缀
+
 export PATH=$RPI_TOOLCHAIN_DIR/bin:$PATH
+
 
 #编译飞控固件，遇到子模块版本相关提示，默认选Y
 
 make posix_rpi_cross_single
 
 # 上传固件
+
 make posix_rpi_cross_signle upload
 
 #  首次启动飞控
 
 登录到飞控主机后
+
 ./px4 px4_rpi.config 
 
 
