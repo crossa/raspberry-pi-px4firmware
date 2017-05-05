@@ -44,10 +44,10 @@ make posix_rpi_cross_signle upload
 
 git clone https://github.com/crossa/raspberry-pi-ppm-rc-in
 
-./configuration
+./configure
 
 make
 
 make install
 
-sudo nohup ppmdecode -P
+sudo nohup ppmdecode P
