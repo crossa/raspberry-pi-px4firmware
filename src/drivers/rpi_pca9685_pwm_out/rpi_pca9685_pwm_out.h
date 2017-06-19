@@ -50,7 +50,8 @@
 #include <systemlib/pwm_limit/pwm_limit.h>
 #include "PCA9685.h"
 
-namespace rpi_pca9685_pwm_out {
+namespace rpi_pca9685_pwm_out
+{
 static px4_task_t _task_handle = -1;
 volatile bool _task_should_exit = false;
 static bool _is_running = false;
@@ -93,6 +94,7 @@ int32_t _pwm_max;
 
 //PCA9685 device
 ::PCA9685 pwm;
+int _pca9685_bus=1; //默认兼容树莓派
 
 MixerGroup *_mixer_group = nullptr;
 
@@ -117,6 +119,6 @@ void task_main(int argc, char *argv[]);
 /* mixer initialization */
 int initialize_mixer(const char *mixer_filename);
 int mixer_control_callback(uintptr_t handle, uint8_t control_group,
-		uint8_t control_index, float &input);
+			   uint8_t control_index, float &input);
 }
 extern "C" __EXPORT int rpi_pca9685_pwm_out_main(int, char **);
